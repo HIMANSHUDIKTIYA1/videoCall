@@ -6,7 +6,7 @@ const server = createServer(app);
 const port = process.env.Port || 3000;
 const io = new Server(server ,{
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://hd-room.netlify.app/",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
     credentials: true
