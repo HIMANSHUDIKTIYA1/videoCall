@@ -34,8 +34,10 @@ io.on("connection", (socket) => {
 socket.on("signal", ({ to, data }) => {
   io.to(to).emit("signal", { from: socket.id, username: socket.username, data });
 });
-
-  socket.on("disconnect", () => {
+socket.on("chat-message", ({ roomId, from, text }) => {
+ socket.to(roomId).emit("receive-message", { from, text });
+});
+socket.on("disconnect", () => {
   if (socket.roomId) {
     io.to(socket.roomId).emit("user-left", socket.id);
   }
