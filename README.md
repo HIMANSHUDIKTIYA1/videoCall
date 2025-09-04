@@ -20,8 +20,7 @@ Includes room system, camera/mic toggle, and real-time chat.
 ---
 
 ## 📂 Project Structure (suggested)
-
-videoCall/
+#videoCall/
 ├─ client/ # React app (Vite or CRA)
 │ ├─ src/
 │ │ ├─ components/
@@ -41,8 +40,6 @@ videoCall/
 └─ server/
 ├─ index.js
 └─ rooms.js
-
-
 
 ---
 
