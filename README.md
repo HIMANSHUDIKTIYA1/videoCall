@@ -19,28 +19,6 @@ Includes room system, camera/mic toggle, and real-time chat.
 
 ---
 
-## 📂 Project Structure (suggested)
-videoCall/
-├─ client/                  # React frontend
-│  ├─ src/
-│  │  ├─ components/        # Reusable UI components
-│  │  │  ├─ LocalVideo.tsx  # Component for showing local video stream
-│  │  │  ├─ RemoteVideo.tsx # Component for showing remote video streams
-│  │  │  └─ ChatPanel.tsx   # Component for chat interface
-│  │  ├─ context/           # React Context for global state
-│  │  │  └─ CallContext.tsx # Provides call-related state and functions
-│  │  ├─ hooks/             # Custom React hooks
-│  │  │  └─ useWebRTC.ts    # Hook handling WebRTC logic
-│  │  ├─ pages/             # Application pages / views
-│  │  │  ├─ Home.tsx        # Landing page
-│  │  │  └─ Room.tsx        # Video call room page
-│  │  ├─ socket.ts          # Socket.io client setup
-│  │  └─ main.tsx           # React app entry point
-│  └─ index.html            # Main HTML file
-└─ server/                  # Node.js backend
-   ├─ index.js              # Server entry point
-   └─ rooms.js              # Room management logic
-
 
 ---
 
@@ -108,6 +86,29 @@ Live Demo: add link here
 Client: /client
 
 Server: /server
+
+## 📂 Project Structure (suggested)
+videoCall/
+├─ client/                  # React frontend
+│  ├─ src/
+│  │  ├─ components/        # Reusable UI components
+│  │  │  ├─ LocalVideo.tsx  # Component for showing local video stream
+│  │  │  ├─ RemoteVideo.tsx # Component for showing remote video streams
+│  │  │  └─ ChatPanel.tsx   # Component for chat interface
+│  │  ├─ context/           # React Context for global state
+│  │  │  └─ CallContext.tsx # Provides call-related state and functions
+│  │  ├─ hooks/             # Custom React hooks
+│  │  │  └─ useWebRTC.ts    # Hook handling WebRTC logic
+│  │  ├─ pages/             # Application pages / views
+│  │  │  ├─ Home.tsx        # Landing page
+│  │  │  └─ Room.tsx        # Video call room page
+│  │  ├─ socket.ts          # Socket.io client setup
+│  │  └─ main.tsx           # React app entry point
+│  └─ index.html            # Main HTML file
+└─ server/                  # Node.js backend
+   ├─ index.js              # Server entry point
+   └─ rooms.js              # Room management logic
+
 
 📄 License
 MIT © Himanshu Diktiya
